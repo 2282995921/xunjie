@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.show{display: block !important;}
+
+/*服务项目*/
+.serve{height: 390px;overflow: hidden;}
+.serve_tabs{text-align: center;margin-bottom: 35px;}
+.serve_tabs a.active{display: inline-block;background: #2e8ddf;color: #fff}
+.serve_tabs a{border-radius: 25px;margin: 0 10px;border: 1px #2e8ddf solid;padding: 15px 25px;color: #2e8ddf;font-size: 14px;}
+.serve_content{background: url(../images/bj1.jpg) no-repeat right bottom;display: none}
+.serve_content ul{height: 280px}
+.serve_content li.unified{background: url(../images/pt1.png) no-repeat left top 0;}
+.serve_content li.manage{background: url(../images/pt2.png) no-repeat left top 0;}
+.serve_content li.engine{background: url(../images/pt3.png) no-repeat left top 0;}
+.serve_content li.cross_platform{background: url(../images/pt4.png) no-repeat left top 0;}
+.serve_content li.jiagou{background: url(../images/pt5.png) no-repeat left top 0;}
+.serve_content li{width: 240px;float: left;height: 100%}
+.serve_content li h3{font-size: 16px;color: #2e8ddf;margin-top: 20px;margin-bottom: 6px}
+.serve_content li p{line-height: 24px;font-size: 14px;color: #666}
+.serve_content li p,.serve_content li h3{padding-left: 55px;}
+
+/*产品展示*/
+.title h3{text-align: center;color: #f18500;font-weight: 400;font-size: 30px;}
+.title p{text-align: center;font-size: 14px;margin-top: 20px;margin-bottom: 50px;}
+.title p a{display: inline-block;color: #999999;border: 1px #ddd solid;border-radius: 25px;padding: 7px 20px;font-size: 14px;}
+.product{width: 100%;height: 550px;position: relative;overflow: hidden;background: #f5f5f5}
+.zujian-left{float: left;width: 175px;border-right: 1px #dddddd solid;padding-left: 20px;}
+.zujian-left a{color: #999;display: inline-block;width: 89%;font-size: 16px;padding: 14px 0px 14px 20px;text-align: center;}
+.zujian-left a.active{color: #fff;background: #2e8ddf;border-radius: 25px 0 0 25px}
+.zujian-right{float: right;width: 1004px;position: relative;}
+.zujian-right li{float: left;text-align: center;margin-left: 64px;margin-bottom: 30px;width: 72px;height: 97px;}
+.zujian-box{position: absolute;top: 0;left: 0;display: none}
+.zujian-box li img{width: 72px;height: 72px;max-width: 100%;display: inline-block;}
+.zujian-box li p{margin-top: 10px;color: #666;font-size: 14px}
+
+/*help*/
+.help{margin-bottom: 50px;}
+.help .title{position: relative;height: 140px;text-align: center;}
+.help .title > h3{/*background: url(../images/dou.png) no-repeat center top;*/color: #000;font-size: 24px;}
+.help .line{background: #2e8ddf;height: 1px;position: absolute;top: 55%;width: 100%;z-index: 0}
+.help .tabs{display: inline-block;z-index: 100;position: absolute;top: 46px;width: 100%;left: 0;}
+.help .tabs a{font-size: 14px;background: #fff;margin: 10px;border: 1px #2e8ddf solid;display: inline-block;border-radius: 25px;padding: 10px 30px;color: #2e8ddf;box-sizing: border-box;}
+.help .tabs a.active{background: #f28600;color: #fff;border: 1px #f28600 solid}
+.link-box{height: 402px;overflow: hidden;}
+.link{display: none;text-align:justify;text-align-last:justify;}
+.link a{display: inline-block;margin-bottom: 10px;}
+.link a img{max-width: 100%;display: inline-block;}
+
+/*方案*/
+.way{height: 675px;background: url(../images/bj2.jpg) no-repeat center;background-size: cover;}
+.way .title h3{color: #000}
+.way .title .more{background: #ddd;color: #999}
+.bx-viewport {width: 94% !important;position: relative;overflow: hidden;height: 400px !important;margin: 0 auto}
+.slider4 {width: 3000px;}
+.slider4 li {margin-top: 42px;height: 355px;position: relative;margin-left: 11px !important;margin-right: 11px !important;background: url(../images/case-bg.png) no-repeat center;background-size: 100% 100%;}
+.slider4 li >p{text-align: center;font-size: 18px;margin-bottom: 20px;padding-top: 50px;}
+.slider4 li >img{position: absolute;top: -40px;left: 50%;margin-left: -36px;}
+.slider4 .sale{padding: 0 25px;}
+.slider4 .sale p{border-bottom: 1px #dddddd dotted;line-height: 3em;text-overflow: ellipsis;
+    overflow: hidden;white-space:nowrap }
+.bx-pager {display: none;}
+.bx-controls{position: absolute;top: 50%;width: 1200px}
+.bx-controls-direction{width: 100%}
+.bx-prev{left: auto !important}
+.bx-next{float: right;font-size: 40px;right: 0;left: auto !important;}
+.bx-wrapper {max-width: 1200px !important;overflow: hidden;position: relative;}
+

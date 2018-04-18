@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>应用</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="UI/layui/css/layui.css">
+    <!-- <script type="text/javascript" src="[JS library]"></script> -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="js/selectivizr.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="header clearfix">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+            <div class="top_right">
+                <ul class="Nav clearfix">
+                    <li><a href="index.html">产品<span></span></a></li>
+                    <li class="active"><a href="application.html">应用<span></span></a></li>
+                    <li><a href="solution.html">解决方案<span></span></a></li>
+                    <li><a href="">客服案例<span></span></a></li>
+                    <li><a href="about.html">关于我们<span></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 应用 -->
+    <section>
+        <div class="box">
+            <div class="content clearfix">
+                <div class="siber">
+                    <ul class="layui-nav layui-nav-tree tree" lay-filter="test">
+                        <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <a href="javascript:;">流程审批<i class="layui-icon">&#xe61a;</i></a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="javascript:;" data-page="1"><img src="images/yy1.png" alt="">企业内刊</a></dd>
+                                <dd><a href="javascript:;" data-page="2"><img src="images/yy1.png" alt="">会议助手</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">任务管理</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">日程安排</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">意见反馈</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">公章管理</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业社区</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业知库</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业新闻</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">待办中心</a></dd>
+                            </dl>
+                        </li>
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <a href="javascript:;">资源平台<i class="layui-icon">&#xe61a;</i></a>
+                            <dl class="layui-nav-child">
+                                <dd><a href=""><img src="images/yy1.png" alt="">工资条</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">快递助手</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业邮箱</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业云盘</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">员工关怀</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业支付</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业证件管理</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">员工证件管理</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">企业招聘</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">人才库</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">移动客服/企业机器人</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">人脸识别</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">产品</a></dd>
+                                <dd><a href=""><img src="images/yy1.png" alt="">大数据</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="app">
+                    <div class="app-head clearfix">
+                        <div class="app-l">
+                            <div class="app-img"><img src="images/ying2.png" alt=""></div><span>企业内刊</span>
+                        </div>
+                    </div>
+                    <div class="app-bottom">
+                        <p><span>功能亮点：</span>企业私有杂志社，可实时查阅图文并茂的期刊内容</p>
+                        <p><span>亮点描述：</span>企业员工可通过手机端阅读企业内刊，培养企业文化。</p>
+                        <div class="append"><img src="images/empty.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="myManu"></div>
+            </div>
+            <div class="app-bg">
+                <div class="content"><img src="images/ying1.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer" id="footer"></div>
+    </footer>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="UI/layui/layui.js"></script>
+    <script src="js/jquery.nicescroll .js"></script>
+    <script>
+    $("#footer").load("footer.html");
+    // 滚动条美化
+    $(document).ready(
+        function() {
+            $('.siber').niceScroll({
+                cursorcolor: "#2d88d6", //#CC0071 光标颜色
+                cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+                touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+                cursorwidth: "5px", //像素光标的宽度
+                cursorborder: "0", // 游标边框css定义
+                cursorborderradius: "5px", //以像素为光标边界半径
+                autohidemode: false //是否隐藏滚动条
+            });
+        }
+    );
+    // itemed下拉
+    $(".layui-nav-itemed >a").bind('click', function() {
+        if ($(this).next().css('display') === 'block') {
+            $(this).children('i').removeClass('transform-i-back').addClass('transform-i')
+        } else {
+            $(this).children('i').removeClass('transform-i').addClass('transform-i-back')
+        }
+        $(this).next().slideToggle(200);
+    });
+    // 侧边动态刷新
+    $(".layui-nav-child >dd").bind('click', function() {
+        var page_id = $(this).attr('data-page');
+        $.ajax({
+                url: 'http://www.mocky.io/v2/5acc4fde2f00000e00411854',
+                type: 'get',
+                dataType: 'html',
+                data: {page_id:page_id},
+            })
+            .done(function(data) {
+                console.log(data);
+                $(".app").html(data)
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+    });
+    </script>
+</body>
+
+</html>
