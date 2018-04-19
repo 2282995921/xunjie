@@ -173,7 +173,8 @@ img{ border-style:none; }
 .content-title-lve2-r{width: 545px;float: right;}
 
 /*关于我们*/
-.about .content{padding-top: 0}
+.case .app-l{margin-left: 0;}
+.about .content,.case .content{padding-top: 0}
 .about-bg{background: url(../images/about1.jpg) no-repeat center;height: 280px;width: 100%;}
 .about-title{font-size: 28px;text-align: center;color: #333333;margin-bottom: 60px;position: relative;margin-top: 50px}
 .about-title:after{content: '';display: inline-block;overflow: hidden;height: 5px;background: #2e8ddf;width: 66px;position: absolute;top: 50px;    left: 50%;
@@ -186,6 +187,34 @@ img{ border-style:none; }
 .help-content ul li p{text-align: justify;color: #666;font-size: 14px;line-height: 1.5em}
 .vision{margin-top: 80px}
 .vision-bottom{text-align: right;}
+
+/*客服案例*/
+#case-fixed{position: fixed;left: 0;right: 0;z-index: 100}
+.case-bg{background: url(../images/anli1.jpg) no-repeat center;height: 280px;width: 100%;}
+.case_topFixedView{position: fixed;left: 0;right: 0;top: 67px; background-color: #FFF;z-index: 10;}
+.frame_navWrap{overflow: hidden;border-bottom: 1px solid #EAEAEA;}
+.frame_nav {padding: 20px 0;margin: 0 10px;color: #555;font-size: 0;}
+.frame_nav_item {display: inline-block;position: relative;vertical-align: top;}
+.frame_nav_item:first-child:before{content: "";height: 0;}
+.frame_nav_item:before{content: "";position: absolute;top: 19px;left: -1px;width: 2px;height: 2px;background-color: #747474;}
+.frame_nav_item_Active{position: relative;}
+.frame_nav_item_Active:after{content: '';width: 72px;display: inline-block;height: 4px;background: #2e8ddf;position: absolute;bottom: -20px;left: 0}
+.frame_nav_item_Active .frame_nav_item_link{    color: #2e8ddf;}
+.frame_nav_item_link{display: block;font-size: 16px;line-height: 40px;padding: 0 20px;color: #666;cursor: pointer;}
+
+.case_cnt{padding-top: 428px;}
+.case_cnt_caseItem {display: block;overflow: hidden;border-style: dashed;border-color: #EAEAEA;border-width: 0 0 1px;border-radius: 0;}
+.case_cnt_caseItem_userLogo {float: left;margin-right: 28px;margin-top: 23.5px;}
+.case_cnt_caseItem_userLogo img{width: 250px;height: 120px;display: inline-block;overflow: hidden;font-size: 0;line-height: 0;}
+.case_cnt_caseItem_info {overflow: hidden;zoom: 1;padding: 32px 0;}
+.case_cnt_caseItem_title {font-size: 24px;color: #2e8ddf;margin-bottom: 8px;font-weight: 400;}
+.case_cnt_caseItem_desc {font-size: 14px;line-height: 20px;color: #666;margin-bottom: 8px;}
+.case_cnt_caseItem_desc span{font-weight: 700;color: #666}
+.case_cnt_caseItem_company {font-size: 14px;color: #f18500;padding-left: 12px;position: relative;line-height: 20px;}
+.case_cnt_caseItemDetail_close{text-align: center;}
+.case_cnt_caseItemDetail{display: none}
+.case_cnt_caseItemDetail-list{margin-top: 60px;margin-bottom: 36px;}
+
 /*公共底部*/
 .footer{background: #313131;border-top: 8px #2e8ddf solid;color: #fff;padding: 38px 20px}
 .footer .content{padding-top: 0;}
