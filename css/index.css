@@ -15,9 +15,18 @@
 .serve_content li.cross_platform{background: url(../images/pt4.png) no-repeat left top 0;}
 .serve_content li.jiagou{background: url(../images/pt5.png) no-repeat left top 0;}
 .serve_content li{width: 240px;float: left;height: 100%}
-.serve_content li h3{font-size: 16px;color: #2e8ddf;margin-top: 20px;margin-bottom: 6px}
+.serve_content li h3{font-size: 16px;color: #2e8dde;margin-top: 20px;margin-bottom: 6px}
 .serve_content li p{line-height: 24px;font-size: 14px;color: #666}
 .serve_content li p,.serve_content li h3{padding-left: 55px;}
+
+.work li{width: 264px;height: 123px;padding: 0 18px;margin-bottom: 5px;}
+.work li h3{display: inline-block;padding-left: 10px;}
+.work li p{padding-left: 0;margin-top: 5px}
+.work .serve-title img{padding-bottom: 5px;}
+.data-center li{width: 244px;padding: 0 24px}
+.data-center li h3{display: block;padding-left: 0;margin-top: 10px;margin-bottom: 16px;}
+.data-center .serve-title{text-align: center;}
+.data-center li p{text-align: justify;padding-left: 0;}
 
 /*产品展示*/
 .title h3{text-align: center;color: #f18500;font-weight: 400;font-size: 30px;}

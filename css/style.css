@@ -195,10 +195,13 @@ img{ border-style:none; }
 .frame_navWrap{overflow: hidden;border-bottom: 1px solid #EAEAEA;}
 .frame_nav {padding: 20px 0;margin: 0 10px;color: #555;font-size: 0;}
 .frame_nav_item {display: inline-block;position: relative;vertical-align: top;}
+.frame_nav_item a:hover{color: #2e8ddf}
+.frame_nav_item a span{width:0;position:absolute;bottom:-20px;left:0;height:4px;background:#2e8ddf;transition:all .3s;}
+.frame_nav_item a:hover span{width:100%;transition:all .3s;}
 .frame_nav_item:first-child:before{content: "";height: 0;}
 .frame_nav_item:before{content: "";position: absolute;top: 19px;left: -1px;width: 2px;height: 2px;background-color: #747474;}
 .frame_nav_item_Active{position: relative;}
-.frame_nav_item_Active:after{content: '';width: 72px;display: inline-block;height: 4px;background: #2e8ddf;position: absolute;bottom: -20px;left: 0}
+.frame_nav_item_Active:after{content: '';width: 100%;display: inline-block;height: 4px;background: #2e8ddf;position: absolute;bottom: -20px;left: 0}
 .frame_nav_item_Active .frame_nav_item_link{    color: #2e8ddf;}
 .frame_nav_item_link{display: block;font-size: 16px;line-height: 40px;padding: 0 23px;color: #666;cursor: pointer;}
 
@@ -210,7 +213,7 @@ img{ border-style:none; }
 .case_cnt_caseItem_title {font-size: 24px;color: #2e8ddf;margin-bottom: 8px;font-weight: 400;}
 .case_cnt_caseItem_desc {font-size: 14px;line-height: 20px;color: #666;margin-bottom: 8px;}
 .case_cnt_caseItem_desc span{font-weight: 700;color: #666}
-.case_cnt_caseItem_company {font-size: 14px;color: #f18500;padding-left: 12px;position: relative;line-height: 20px;}
+.case_cnt_caseItem_company {font-size: 14px;color: #f18500;padding-left: 0;position: relative;line-height: 20px;}
 .case_cnt_caseItemDetail_close{text-align: center;}
 .case_cnt_caseItemDetail{display: none}
 .case_cnt_caseItemDetail-list{margin-top: 60px;margin-bottom: 36px;}
