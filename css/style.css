@@ -200,9 +200,9 @@ img{ border-style:none; }
 .frame_nav_item_Active{position: relative;}
 .frame_nav_item_Active:after{content: '';width: 72px;display: inline-block;height: 4px;background: #2e8ddf;position: absolute;bottom: -20px;left: 0}
 .frame_nav_item_Active .frame_nav_item_link{    color: #2e8ddf;}
-.frame_nav_item_link{display: block;font-size: 16px;line-height: 40px;padding: 0 20px;color: #666;cursor: pointer;}
+.frame_nav_item_link{display: block;font-size: 16px;line-height: 40px;padding: 0 23px;color: #666;cursor: pointer;}
 
-.case_cnt{padding-top: 428px;}
+.case_cnt{padding-top: 428px;padding-bottom: 40px;}
 .case_cnt_caseItem {display: block;overflow: hidden;border-style: dashed;border-color: #EAEAEA;border-width: 0 0 1px;border-radius: 0;}
 .case_cnt_caseItem_userLogo {float: left;margin-right: 28px;margin-top: 23.5px;}
 .case_cnt_caseItem_userLogo img{width: 250px;height: 120px;display: inline-block;overflow: hidden;font-size: 0;line-height: 0;}
