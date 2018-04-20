@@ -218,6 +218,9 @@ img{ border-style:none; }
 .case_cnt_caseItemDetail{display: none}
 .case_cnt_caseItemDetail-list{margin-top: 60px;margin-bottom: 36px;}
 
+.close{text-align: center;}
+.close a{display: inline-block;background: url(../images/close.png) no-repeat center right;padding-right: 18px;}
+
 /*公共底部*/
 .footer{background: #313131;border-top: 8px #2e8ddf solid;color: #fff;padding: 38px 20px}
 .footer .content{padding-top: 0;}
