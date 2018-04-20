@@ -14,8 +14,8 @@ img{ border-style:none; }
 /*公共头部*/
 .current{background: #007cc3;}
 .current a{color: #fff}
-.top{background: #222222}
-.header ,.content{width: 1200px;margin: 0 auto;}
+.top{background: #222222;z-index: 1000;}
+.header ,.content{width: 1200px;margin: 0 auto;position: relative;}
 .header .logo{float: left;margin-top: 12px;}
 .header .logo a{display: inline-block;}
 .header .top_right{float: right}
@@ -26,6 +26,30 @@ img{ border-style:none; }
 .header .top_right >ul>li>a{font-size: 16px;margin: 3px 15px 0px 15px;display: block;color: #fff;padding: 0 10px}
 .header .top_right .active a{border-bottom: 4px #f38400 solid}
 
+/*top hover*/
+.scrollbar-list{position: absolute;top: 67px;height: auto;z-index: 100;left: 50%;display: none}
+.c-scrollbar{
+    font-size: 12px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #b3b7bf;
+    border-radius: 2px;
+    background-color: #fff;
+    line-height: 18px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+    position: static !important;
+    left: 50%;
+    top: 50%;
+}
+.item{
+    border-color: #dedfe0;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+    display: inline-block;
+    pointer-events: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 /*banner*/
 /*#test10{height: 550px}*/
 .layui-carousel-ind li.layui-this{background-color: #f38400 !important}
