@@ -20,14 +20,23 @@ img{ border-style:none; }
 .header .logo a{display: inline-block;}
 .header .top_right{float: right}
 .header .top_right >ul>li{float: left;position: relative;}
-.Nav a{position: relative;float: left;margin-left: 44px;line-height:60px;color:#444; font-size:14px;}
-.Nav a span{width:0;position:absolute;bottom:-4px;left:0;height:4px;background:#e67e21;transition:all .3s;}
-.Nav a:hover span{width:100%;transition:all .3s;}
+.Nav li >a{position: relative;float: left;margin-left: 44px;line-height:60px;color:#444; font-size:14px;}
+.Nav li >a span{width:0;position:absolute;bottom:-4px;left:0;height:4px;background:#e67e21;transition:all .3s;}
+.Nav li >a:hover span{width:100%;transition:all .3s;}
 .header .top_right >ul>li>a{font-size: 16px;margin: 3px 15px 0px 15px;display: block;color: #fff;padding: 0 10px}
-.header .top_right .active a{border-bottom: 4px #f38400 solid}
+.header .top_right .active >a{border-bottom: 4px #f38400 solid}
 
 /*top hover*/
-.scrollbar-list{position: absolute;top: 67px;height: auto;z-index: 100;left: 50%;display: none}
+.scrollbar-list{
+    position: absolute;
+    top: 67px;
+    height: auto;
+    z-index: 100;
+    left: 50%;
+    display: none;
+    max-width: 1500px;
+    margin: 0 auto;
+}
 .c-scrollbar{
     font-size: 12px;
     -moz-box-sizing: border-box;
@@ -41,15 +50,47 @@ img{ border-style:none; }
     position: static !important;
     left: 50%;
     top: 50%;
+    width: 500px
 }
 .item{
     border-color: #dedfe0;
     box-shadow: 0 0 5px rgba(0,0,0,.15);
-    display: inline-block;
+    display: block;
     pointer-events: auto;
     overflow-y: auto;
     overflow-x: hidden;
 }
+.item .porduct-list{
+    box-sizing: border-box;
+    padding: 15px 0 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 231px;
+    white-space: normal;
+}
+.porduct-list-title{    
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: #e5e5e5 1px solid;
+    max-width: 190px;
+}
+.porduct-list-tit a{    
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 0;
+    transition: all .4s;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #333;
+}
+.porduct-list-tit a:hover{
+    color: #00a4ff;
+}
+
 /*banner*/
 /*#test10{height: 550px}*/
 .layui-carousel-ind li.layui-this{background-color: #f38400 !important}
