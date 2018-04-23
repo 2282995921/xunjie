@@ -20,7 +20,7 @@
 
 <body>
     <!-- top -->
-    <div class="top" id="case-fixed">
+    <div class="top">
         <div class="header clearfix">
             <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
             <div class="top_right">
@@ -95,6 +95,21 @@
                                 </div>
                             </div>
                         </div>
+                                                <div>
+                            <a href="javascript:;" class="case_cnt_caseItem">
+                                <div class="case_cnt_caseItem_userLogo"><img src="" alt=""></div>
+                                <div class="case_cnt_caseItem_info">
+                                    <h3 class="case_cnt_caseItem_title">鄂州职业大学</h3>
+                                    <p class="case_cnt_caseItem_desc"><span>方案概述 ：</span>鄂州职业大学对校园信息化工作不断加大投入，以统一规划、分步实施为主要特征的数字化校园，已成为高校信息化建设的主流，信息标准体系、安全保障体系、运维保障体系，已成为今后学校信息化建设与运行维护的重点。</p>
+                                    <div class="case_cnt_caseItem_company">>> 查看详细</div>
+                                </div>
+                            </a>
+                            <div class="case_cnt_caseItemDetail">
+                                <div class="case_cnt_caseItemDetail-list">
+                                    <p>ssssssssssssssssssssssssssss</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,8 +117,22 @@
     </div>
     <script>
     $(".case_cnt_caseItem").bind('click', function() {
-        $(this).next().toggle()
+        $(".case_cnt_caseItemDetail").hide();
+        $(this).next().toggle();
     });
+    $(".close >a").bind('click', function () {
+        $(this).parent().parent().hide();
+        $("html,body").scrollTop(0);
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop()>347) {
+            $(".frame_nav").addClass('case-fixed');
+            $(".case-content").css('margin-top', '110px');
+        }else{
+            $(".frame_nav").removeClass('case-fixed');
+            $(".case-content").css('margin-top', '0');
+        }
+    })
     </script>
     <!-- footer -->
     <footer>

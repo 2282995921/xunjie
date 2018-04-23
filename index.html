@@ -40,6 +40,13 @@
                                     <div class="porduct-list-tit"><a href="">产品1</a></div>
                                     <div class="porduct-list-tit"><a href="">产品1</a></div>
                                 </div>
+                                <div class="porduct-list">
+                                    <div class="porduct-list-title">产品1</div>
+                                    <div class="porduct-list-tit"><a href="">产品1</a></div>
+                                    <div class="porduct-list-tit"><a href="">产品1</a></div>
+                                    <div class="porduct-list-tit"><a href="">产品1</a></div>
+                                    <div class="porduct-list-tit"><a href="">产品1</a></div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -521,6 +528,8 @@
 
         $("#nav li").hover(function() {
             var scrollbar = $(this).children('.scrollbar-list');
+            var porduct_list = scrollbar.find('.porduct-list');
+            scrollbar.width(porduct_list.width() * 3 + 88)
             scrollbar.css('margin-left', -(scrollbar.width() / 2));
             scrollbar.slideDown("fast");
         }, function() {

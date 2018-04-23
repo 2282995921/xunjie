@@ -50,7 +50,6 @@ img{ border-style:none; }
     position: static !important;
     left: 50%;
     top: 50%;
-    width: 500px
 }
 .item{
     border-color: #dedfe0;
@@ -86,6 +85,10 @@ img{ border-style:none; }
     text-overflow: ellipsis;
     font-size: 12px;
     color: #333;
+}
+.porduct-list-tit a{
+    font-size: 14px;
+    margin: 5px 0;
 }
 .porduct-list-tit a:hover{
     color: #00a4ff;
@@ -254,11 +257,11 @@ img{ border-style:none; }
 .vision-bottom{text-align: right;}
 
 /*客服案例*/
-#case-fixed{position: fixed;left: 0;right: 0;z-index: 100}
+.case-fixed{position: fixed;top: 0;z-index: 100}
 .case-bg{background: url(../images/anli1.jpg) no-repeat center;height: 280px;width: 100%;}
-.case_topFixedView{position: fixed;left: 0;right: 0;top: 67px; background-color: #FFF;z-index: 10;}
+/*.case_topFixedView{position: fixed;left: 0;right: 0;top: 67px; background-color: #FFF;z-index: 10;}*/
 .frame_navWrap{overflow: hidden;border-bottom: 1px solid #EAEAEA;}
-.frame_nav {padding: 20px 0;margin: 0 10px;color: #555;font-size: 0;}
+.frame_nav {padding: 20px 10px;color: #555;font-size: 0;width: 1200px;background: #fff}
 .frame_nav_item {display: inline-block;position: relative;vertical-align: top;}
 .frame_nav_item a:hover{color: #2e8ddf}
 .frame_nav_item a span{width:0;position:absolute;bottom:-20px;left:0;height:4px;background:#2e8ddf;transition:all .3s;}
@@ -270,7 +273,7 @@ img{ border-style:none; }
 .frame_nav_item_Active .frame_nav_item_link{    color: #2e8ddf;}
 .frame_nav_item_link{display: block;font-size: 16px;line-height: 40px;padding: 0 23px;color: #666;cursor: pointer;}
 
-.case_cnt{padding-top: 428px;padding-bottom: 40px;}
+/*.case_cnt{padding-top: 428px;padding-bottom: 40px;}*/
 .case_cnt_caseItem {display: block;overflow: hidden;border-style: dashed;border-color: #EAEAEA;border-width: 0 0 1px;border-radius: 0;}
 .case_cnt_caseItem_userLogo {float: left;margin-right: 28px;margin-top: 23.5px;}
 .case_cnt_caseItem_userLogo img{width: 250px;height: 120px;display: inline-block;overflow: hidden;font-size: 0;line-height: 0;}
