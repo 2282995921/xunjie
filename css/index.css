@@ -62,8 +62,8 @@
 .bx-viewport {width: 94% !important;position: relative;overflow: hidden;height: 400px !important;margin: 0 auto}
 /*.slider4 {width: 3000px;}*/
 .slider4 li {margin-top: 42px;height: 355px;position: relative;margin-left: 11px !important;margin-right: 11px !important;background: url(../images/case-bg.png) no-repeat center;background-size: 100% 100%;}
-.slider4 li >p{text-align: center;font-size: 18px;margin-bottom: 20px;padding-top: 50px;}
-.slider4 li >img{position: absolute;top: -40px;left: 50%;margin-left: -36px;}
+.slider4 li a> p{text-align: center;font-size: 18px;margin-bottom: 20px;padding-top: 50px;}
+.slider4 li a>img{position: absolute;top: -40px;left: 50%;margin-left: -36px;}
 .slider4 .sale{padding: 0 25px;}
 .slider4 .sale p{border-bottom: 1px #dddddd dotted;line-height: 3em;text-overflow: ellipsis;
     overflow: hidden;white-space:nowrap }

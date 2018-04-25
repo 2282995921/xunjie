@@ -7,7 +7,7 @@
     <title>解决方案</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="UI/layui/css/layui.css">
+
     <!-- <script type="text/javascript" src="[JS library]"></script> -->
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="js/selectivizr.js"></script>
@@ -25,7 +25,7 @@
                     <li><a href="index.html">产品<span></span></a></li>
                     <li><a href="application.html">应用<span></span></a></li>
                     <li class="active"><a href="solution.html">解决方案<span></span></a></li>
-                    <li><a href="case.html">客服案例<span></span></a></li>
+                    <li><a href="case.html">客户案例<span></span></a></li>
                     <li><a href="about.html">关于我们<span></span></a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
     <section>
         <div class="box">
             <div class="content clearfix">
-                <div class="siber-solution">
+                <div class="siber-solution" id="boxscroll">
                     <ul>
                         <li class="active item-1">
                             <a href="javascript:;" data-num="3">
@@ -73,6 +73,11 @@
                             </a>
                         </li>
                         <li class="item-8">
+                            <a href="javascript:;" data-num="10">
+                                <p>能源</p>
+                            </a>
+                        </li>
+                                                <li class="item-8">
                             <a href="javascript:;" data-num="10">
                                 <p>能源</p>
                             </a>
@@ -191,7 +196,15 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="UI/layui/layui.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
     <script>
+    // 滚动条美化
+
+    $(document).ready(
+        function() {
+            $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"",boxzoom:true});
+        }
+    );
 
     $(window).scroll(function () {
         var totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
@@ -220,6 +233,10 @@
     $(".item-1").css('background', 'url(images/jjfa3b.png) no-repeat #2e8ddf center top 20px');
     $(".siber-solution li a").bind('click', function() {
         $("html,body").animate({scrollTop:0}, 500);
+        $('.siber-solution').css({
+                'bottom': 'auto',
+                'top': '117px'
+            });
         var index = $(this).attr('data-num');
         $(this).parent().addClass('active').siblings().removeClass('active');
         if ($(".siber-solution li").hasClass("active")) {

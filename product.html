@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>关于我们</title>
+    <title>产品</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="UI/layui/css/layui.css">
     <link rel="prefetch" href="images/banner1.jpg" />
     <link rel="stylesheet" href="UI/Swiper-3.4.2/dist/css/swiper.min.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
     <!-- <script type="text/javascript" src="[JS library]"></script> -->
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="js/selectivizr.js"></script>
@@ -24,53 +25,92 @@
             <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
             <div class="top_right">
                 <ul class="Nav clearfix" id="nav">
-                    <li><a href="index.html">产品<span></span></a></li>
+                    <li class="active"><a href="index.html">产品<span></span></a></li>
                     <li><a href="application.html">应用<span></span></a></li>
                     <li><a href="solution.html">解决方案<span></span></a></li>
                     <li><a href="case.html">客户案例<span></span></a></li>
-                    <li class="active"><a href="about.html">关于我们<span></span></a></li>
+                    <li><a href="about.html">关于我们<span></span></a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="about">
-        <div class="about-bg"></div>
-        <div class="content clearfix">
-            <div class="company-profile">
-                <div class="about-title">公司简介</div>
-                <div class="company-profile-content">
-                    <p>我们是一家面向全国提供IT解决方案与服务的公司。主要致力于企业信息化，尤其是移动互联网信息化领域，涉及有关咨询、规划、解决方案、项目开发、实施建设、运营推广与服务的软件企业。公司成立于2005年，目前员工300余人，包括9个销售团队、4个客服团队、1个渠道团队、4个研发部门及4个技术支持团队，并在全国设有4家子公司。一直以来作为腾讯企业产品技术服务中心，专注于腾讯企业化平台生态，与腾讯建立了良好的合作关系，成为基于产品销售、系统定制、集成开发为主的企业产品系统服务中心。</p>
-                    <p>我们在众多行业领域拥有领先的市场占有率，涵盖行业包括：教育、制造业、设计院/科研、连锁机构/零售、政府、大型集团企业、金融、能源等，我们在与这些领域的共同成长中，逐渐形成了以“平台+应用+服务=用户价值”的理念，围绕着这个理念我们打造了微信一体化服务平台、工作流引擎平台、大数据中心平台等三大平台，以及50多个涉及企业办公、移动支付、流程审批、企业文化、资讯通知、实用工具等类型的应用，成功帮助上千家企业实现了智能化、移动化的高效工作方式。</p>
-                    <p>今后我们还将近一步贯彻“平台+应用+服务=用户价值”的理念，将大数据中心平台打造成我们的拳头产品，全方位解决数据治理、数据服务、企业信息化建设标准、数据决策分析等大数据中心建设的各个环节，拥抱大数据时代，让数据成为企业里真正无形而无穷的资产。</p>
+    <div class="case">
+        <div class="case_topFixedView">
+            <div class="product-bg app-solution">
+                <div class="content app-head clearfix">
+                    <div class="app-l">
+                        <h3>产品</h3>
+                        <p>微信一体化服务平台+工作引擎平台+大数据中心平台</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-help">
-                <div class="about-title">我们可以提供</div>
-                <div class="help-content clearfix">
-                    <ul>
-                        <li>
-                            <img src="images/about3.png" alt="">
-                            <h2>专业、完整的信息化解决方案</h2>
-                            <p>公司在产品研发方面的高投入，众多项目的实际应用，让我们具备了相应的的创造力和丰富的经验，形成以客户业务为中心，以客户实际需求为导向，从客户利益出发，为客户提供完善的信息化应用解决方案。</p>
-                        </li>
-                        <li>
-                            <img src="images/about4.png" alt="">
-                            <h2>先进、专业的技术支持</h2>
-                            <p>公司众多一流人才的深层磨合，对最新技术执拗的探讨精神，使我们能够保证为你提供最专业的应用，最专业的技术。</p>
-                        </li>
-                        <li>
-                            <img src="images/about5.png" alt="">
-                            <h2>快捷、优质的售后服务</h2>
-                            <p>以最快的速度、最有效的方法、最优质的服务，解除您的后顾之忧。</p>
-                        </li>
-                    </ul>
+            <div class="content">
+                <div class="product-type clearfix">
+                    <div class="product-tab">
+                        <a href="javascript:;" id="wx">
+                            <img src="images/cp2.png" alt="">
+                            <p>微信一体化</p>
+                            </a>
+                        <a href="javascript:;" id="work">
+                            <img src="images/cp6.png" alt="">
+                            <p>工作引擎</p>
+                            </a>
+                        <a href="javascript:;" id="data">
+                            <img src="images/cp7.png" alt="">
+                            <p>大数据中心</p>
+                            </a>
+                    </div>
                 </div>
-                <div class="vision"><img src="images/about6.png" alt="">
-                    <div class="vision-bottom"><img src="images/about7.png" alt=""></div>
+                <div class="boxs show">
+                    <div class="product-head clearfix">
+                        <div class="product-l">
+                            <h2><span id="width_fz">微信一体化服务平台</span></h2>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        ddddddddddddd
+                    </div>
+                </div>
+                <div class="boxs">
+                    cccccc
                 </div>
             </div>
         </div>
     </div>
+    <script>
+    $(".product-type a").bind('click', function() {
+        var product_tabs = $(".product-type a");
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".boxs").eq(product_tabs.index(this)).addClass('show').siblings().removeClass('show')
+    });
+    $("#wx").bind('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).find('img').attr('src', 'images/cp2.png');
+            $("#work").find('img').attr('src', 'images/cp6.png');
+            $("#data").find('img').attr('src', 'images/cp7.png');
+        }else{
+            return flase;
+        }
+    });
+    $("#work").bind('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).find('img').attr('src', 'images/cp3.png');
+            $("#wx").find('img').attr('src', 'images/cp5.png');
+            $("#data").find('img').attr('src', 'images/cp7.png');
+        }else{
+            return flase;
+        }
+    });
+    $("#data").bind('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).find('img').attr('src', 'images/cp4.png');
+            $("#wx").find('img').attr('src', 'images/cp5.png');
+            $("#work").find('img').attr('src', 'images/cp6.png');
+        }else{
+            return flase;
+        }
+    });
+    </script>
     <!-- footer -->
     <footer>
         <div class="footer" id="footer">
