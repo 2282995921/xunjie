@@ -43,22 +43,22 @@
 .zujian-box li p{margin-top: 10px;color: #666;font-size: 14px}
 
 /*help*/
-.help{margin-bottom: 50px;}
-.help .title{position: relative;height: 140px;text-align: center;}
+/*.help{margin-bottom: 50px;}*/
+.help .title{position: relative;height: 100px;text-align: center;}
 .help .title > h3{/*background: url(../images/dou.png) no-repeat center top;*/color: #000;font-size: 24px;}
-.help .line{background: #2e8ddf;height: 1px;position: absolute;top: 55%;width: 100%;z-index: 0}
-.help .tabs{display: inline-block;z-index: 100;position: absolute;top: 46px;width: 100%;left: 0;}
-.help .tabs a{font-size: 14px;background: #fff;margin: 10px;border: 1px #2e8ddf solid;display: inline-block;border-radius: 25px;padding: 10px 30px;color: #2e8ddf;box-sizing: border-box;}
-.help .tabs a.active{background: #f28600;color: #fff;border: 1px #f28600 solid}
-.link-box{height: 402px;overflow: hidden;}
-.link{display: none;text-align:justify;text-align-last:justify;}
+.help .tabs{display: inline-block;text-align: center;margin-bottom: 30px;width: 100%;border-bottom: 1px #ddd solid;}
+.help .tabs a{font-size: 14px;display: inline-block;padding: 20px 30px;box-sizing: border-box;}
+.help .tabs a.active{border-bottom: 4px #2e8ddf solid;}
+.link-box{height: 490px;overflow: hidden;}
+.link{display: none;text-align: center;}/*text-align:justify;text-align-last:justify;*/
 .link a{display: inline-block;margin-bottom: 10px;}
 .link a img{max-width: 100%;display: inline-block;}
+.help-bottom-icon {text-align: center;}
 
 /*方案*/
 .way{height: 675px;background: url(../images/bj2.jpg) no-repeat center;background-size: cover;}
 .way .title h3{color: #000}
-.way .title .more{background: #ddd;color: #999}
+.way .title .more,.help .title .more{background: #ddd;color: #999}
 .bx-viewport {width: 94% !important;position: relative;overflow: hidden;height: 400px !important;margin: 0 auto}
 /*.slider4 {width: 3000px;}*/
 .slider4 li {margin-top: 42px;height: 355px;position: relative;margin-left: 11px !important;margin-right: 11px !important;background: url(../images/case-bg.png) no-repeat center;background-size: 100% 100%;}
