@@ -122,6 +122,10 @@ img{ border-style:none; }
     font-size: 12px;
     position: relative;
 }
+.porduct-list-lv1 .porduct-list-tit:last-child:after,.way-porduct .porduct-list-tit:last-child:after{
+    content: '';
+    border: none;
+}
 .porduct-list .porduct-list-tit span{
     color: #2e8dde;
 }
@@ -156,9 +160,8 @@ img{ border-style:none; }
     right: -0;
     top: 8px;
     height: 14px;
-    width: 2px;
     display: block;
-    border-right: 2px #666 solid;
+    border-right: 2px rgba(102,102,102,0.6) solid;
 
 }
 .porduct-list-tit a:hover{
